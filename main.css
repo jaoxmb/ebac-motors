@@ -1,5 +1,71 @@
+:root{
+  --bg-primary: #fff;
+  --bg-secondary: #4e18bb;
+  --bg-terc: #9b29f8;
+
+  --color-primary: #000;
+  --color-secondary: #fff;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  font-size: 16px;
+}
+.container{
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+header{
+  background-color: var(--bg-secondary);
+  color: var(--color-secondary);
+}
+header > .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+header h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+header #hamburger{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  cursor: pointer;
+}
+header #hamburger span{
+  width: 32px;
+  height: 3px;
+  background-color: var(--color-secondary);
+}
+
+header nav{
+  display: none; /* Controlado pelo jQuery*/
+  padding: 10px 0;
+  background-color: var(--bg-terc);
+}
+header nav ul{
+  display: flex;
+  gap: 10px;
+}
+header nav li{
+  list-style: none;
+  box-shadow: 0 2px 0 0 transparent;
+  transition: box-shadow .3s;
+  text-wrap: nowrap;
+}
+header nav li:hover{
+  box-shadow: 0 2px 0  0 var(--bg-secondary);
+}
+header nav a{
+  color: var(--color-secondary);
+  text-decoration: none;
 }
