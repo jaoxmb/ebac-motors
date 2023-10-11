@@ -126,14 +126,13 @@ ul.shop{
   gap: 20px;
 }
 ul.shop li{
-  width: 300px;
+  width: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 10px;
-  background-color: var(--bg-secundary);
-  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid var(--bg-secundary);
 }
 ul.shop li > div{
   padding: 0 10px;
@@ -143,7 +142,6 @@ ul.shop li > div{
 }
 ul.shop li img{
   width: 100%;
-  border-radius: 10px;
 }
 ul.shop li span{
   font-weight: bold;
