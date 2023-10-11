@@ -1,5 +1,6 @@
 import { menuToggle } from "./component/menu.js"
 import { highlight } from "./component/highligh.js";
+import { promotions } from "./component/promotions.js";
 
 $(document).ready(() => {
   const hamburger = $("#hamburger");
@@ -16,4 +17,5 @@ $(document).ready(() => {
   });
 
   highlight();
+  promotions();
 })
