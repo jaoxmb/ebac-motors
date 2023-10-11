@@ -1,5 +1,5 @@
 import { menuToggle } from "./component/menu.js"
-import { highlightLoad } from "./component/highligh.js";
+import { highlight } from "./component/highligh.js";
 
 $(document).ready(() => {
   const hamburger = $("#hamburger");
@@ -15,5 +15,5 @@ $(document).ready(() => {
     arrows: false
   });
 
-  highlightLoad();
+  highlight();
 })

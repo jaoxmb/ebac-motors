@@ -1,3 +1,5 @@
+import { shop } from "./shop.js";
+
 const itensMock = [
   {
     img: "/images/carro-bmw.png",
@@ -19,7 +21,9 @@ const itensMock = [
   }
 ];
 
-export const highlightLoad = () => {
+export const highlight = () => {
   const itens = itensMock;
+
+  shop("#highlight .shop", itens);
 
 };
