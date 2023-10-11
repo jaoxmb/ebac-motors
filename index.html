@@ -75,11 +75,15 @@
     <div class="container">
       <h2>Contato</h2>
       <form>
-        <input type="text" id="name" placeholder="Nome completo"/>
-        <input type="email" id="email" placeholder="Seu e-mail"/>
-        <input type="tel" id="cell" placeholder="Número de celular"/>
-        <textarea id="message" cols="30" rows="10" placeholder="Escreva sua mensagem...">
+        <input type="text" id="name" placeholder="Nome completo" required/>
+        <input type="email" id="email" placeholder="Seu e-mail" required/>
+        <input type="tel" id="tel" placeholder="Número de celular" required/>
+        <input type="vehicle" id="vehicle" placeholder="Veículo do seu interesse" required/>
+        <textarea id="message" cols="30" rows="10" placeholder="Escreva sua mensagem..." required>
         </textarea>
+        <button type="submit">
+          Enviar
+        </button>
       </form>
     </div>
   </section>

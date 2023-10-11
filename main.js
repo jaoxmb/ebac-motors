@@ -1,3 +1,4 @@
+import "./component/contact.js";
 import { menuToggle } from "./component/menu.js"
 import { highlight } from "./component/highligh.js";
 import { promotions } from "./component/promotions.js";
