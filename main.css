@@ -1,7 +1,11 @@
 :root{
   --bg-primary: #fff;
-  --bg-secondary: #4e18bb;
-  --bg-terc: #9b29f8;
+  --bg-secundary: #eaeaea;
+  --bg-menu-primary: #4e18bb;
+  --bg-menu-secundary: #9b29f8;
+
+  --bg-button-primary: #32db57;
+  --bg-button-secundary: #1eab3d;
 
   --color-primary: #000;
   --color-secondary: #fff;
@@ -11,12 +15,14 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 body{
   font-size: 16px;
 }
 h1,h2,h3,h4{
   font-weight: bold;
+  margin-bottom: 10px;
 }
 h1{
   font-size: 40px;
@@ -24,11 +30,26 @@ h1{
 h2{
   font-size: 32px;
 }
-h2{
+h3{
   font-size: 25px;
 }
 h4{
   font-size: 20px;
+}
+button{
+  outline: none;
+  border: none;
+  padding: 7px 20px;
+  background-color: #1dcc1d;
+  border-radius: 5px;
+  color: var(--color-secondary);
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+button:hover{
+  background-color: var(--bg-button-secundary);
 }
 .container{
   width: 100%;
@@ -37,9 +58,10 @@ h4{
   padding: 0 30px;
 }
 header{
-  background-color: var(--bg-secondary);
+  background-color: var(--bg-menu-primary);
   color: var(--color-secondary);
 }
+
 header > .container{
   display: flex;
   align-items: center;
@@ -65,7 +87,7 @@ header #hamburger span{
 header nav{
   display: none; /* Controlado pelo jQuery*/
   padding: 10px 0;
-  background-color: var(--bg-terc);
+  background-color: var(--bg-menu-secundary);
 }
 header nav ul{
   display: flex;
@@ -78,7 +100,7 @@ header nav li{
   text-wrap: nowrap;
 }
 header nav li:hover{
-  box-shadow: 0 2px 0  0 var(--bg-secondary);
+  box-shadow: 0 2px 0  0 var(--bg-menu-primary);
 }
 header nav a{
   color: var(--color-secondary);
@@ -96,5 +118,35 @@ section{
   width: 50%;
 }
 #about h3{
+  margin-bottom: 10px;
+}
+
+ul.shop{
+  display: flex;
+  gap: 20px;
+}
+ul.shop li{
+  width: 300px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  background-color: var(--bg-secundary);
+  border-radius: 20px;
+}
+ul.shop li > div{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+ul.shop li img{
+  width: 100%;
+  border-radius: 10px;
+}
+ul.shop li span{
+  font-weight: bold;
+  font-size: 16px;
   margin-bottom: 10px;
 }
