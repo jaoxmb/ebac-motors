@@ -39,9 +39,8 @@ h4{
 button{
   outline: none;
   border: none;
-  padding: 7px 20px;
+  padding: 10px 20px;
   background-color: #1dcc1d;
-  border-radius: 5px;
   color: var(--color-secondary);
   font-weight: bold;
   font-size: 14px;
