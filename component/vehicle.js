@@ -1,9 +1,11 @@
-const selectVehicleBtns = $(".select-vehicle");
-
-selectVehicleBtns.on("click", (e) => {
+$(".select-vehicle").click((e) => {
   const vehicle = $(e.target).data("vehicle");
 
-  $("#vehicle").val(vehicle);
-  // Go to contact section
-  window.location.assign("#contact");
+  $("#vehicle")
+    .val(vehicle);
+    
+  $("html")
+    .animate({
+      scrollTop: $("#contact").offset().top,
+    }, 1500)
 })
