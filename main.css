@@ -145,9 +145,8 @@ ul.shop li > div{
 ul.shop li img{
   width: 100%;
 }
-ul.shop li span{
-  font-weight: bold;
-  margin-bottom: 10px;
+ul.shop li .price{
+  margin: 10px 0;
 }
 #contact form{
   max-width: 40%;
