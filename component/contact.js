@@ -9,11 +9,11 @@ form.on("submit", (e) => {
   const message = $("#message");
 
   const contact = {
-    name: name.value(),
-    email: email.value(),
-    tel: tel.value(),
-    vehicle: vehicle.value(),
-    message: message.value()
+    name: name.val(),
+    email: email.val(),
+    tel: tel.val(),
+    vehicle: vehicle.val(),
+    message: message.val()
   }
 
   console.log(contact);
