@@ -1,12 +1,15 @@
 const form = $("#contact form");
+const name = $("#name");
+const email = $("#email");
+const tel = $("#tel");
+const vehicle = $("#vehicle");
+const message = $("#message");
+
+tel.mask("(00) 00000-0000");
+
 
 form.on("submit", (e) => {
   e.preventDefault();
-  const name = $("#name");
-  const email = $("#email");
-  const tel = $("#tel");
-  const vehicle = $("#vehicle");
-  const message = $("#message");
 
   const contact = {
     name: name.val(),
