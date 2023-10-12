@@ -3,25 +3,22 @@ import { shop } from "./shop.js";
 const itensMock = [
   {
     img: "/images/carro-bmw.png",
-    title: "Carro BMW",
+    vehicle: "Carro BMW",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     price: 158000
   },
   {
     img: "/images/fusca.png",
-    title: "Carro Fusca",
+    vehicle: "Carro Fusca",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     price: 32000
   },
   {
     img: "/images/moto-bmw.png",
-    title: "Moto BMW",
+    vehicle: "Moto BMW",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     price: 62000
   }
 ];
 
-export const promotions = () => {
-  const itens = itensMock;
-  shop('#promotions .shop', itens);
-}
+shop('#promotions .shop', itensMock);
