@@ -1,11 +1,11 @@
 :root{
   --bg-primary: #fff;
   --bg-secundary: #eaeaea;
-  --bg-menu-primary: #4e18bb;
-  --bg-menu-secundary: #9b29f8;
+  --bg-menu-primary: #1c3061;
+  --bg-menu-secundary: #616ad5;
 
-  --bg-button-primary: #32db57;
-  --bg-button-secundary: #1eab3d;
+  --bg-button-primary: #0fa063;
+  --bg-button-secundary: #0d8b57;
 
   --color-primary: #000;
   --color-secondary: #fff;
@@ -167,7 +167,7 @@ ul.shop li span{
   resize: none;
 }
 #contact form .error{
-  color: #9a9a9a;
+  color: #e77070;
 }
 
 footer{
@@ -186,8 +186,6 @@ footer > .container{
 }
 .social-midia li{
   list-style: none;
-  padding: 10px;
-  background-color: var(--bg-menu-secundary);
   border-radius: 100px;
   width: 40px;
   height: 40px;
