@@ -14,7 +14,7 @@ export const shop = (elementSelector, itens) => {
       <li>
         <img src="${img}" alt="${vehicle}"/>
         <div>
-          <h4>${vehicle}</h4>
+          <h3>${vehicle}</h3>
           <p>${desc}</p>
           <span>${currency(price)}</span>
           <button class="select-vehicle" data-vehicle="${vehicle}">Tenho interesse</button>
