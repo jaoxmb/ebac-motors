@@ -165,3 +165,30 @@ ul.shop li span{
   min-height: 40%;
   resize: none;
 }
+
+footer{
+  background-color: var(--bg-menu-primary);
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 20px;
+}
+footer > .container{
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.social-midia{
+  gap: 20px;
+}
+.social-midia li{
+  list-style: none;
+  padding: 10px;
+  background-color: var(--bg-menu-secundary);
+  border-radius: 100px;
+  width: 40px;
+  height: 40px;
+}
+.social-midia li img{
+  width: 100%;
+}
