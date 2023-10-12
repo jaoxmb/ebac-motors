@@ -75,11 +75,11 @@
     <div class="container">
       <h2>Contato</h2>
       <form>
-        <input type="text" id="name" placeholder="Nome completo" required/>
-        <input type="email" id="email" placeholder="Seu e-mail" required/>
-        <input type="tel" id="tel" placeholder="Número de celular" required/>
-        <input type="text" id="vehicle" placeholder="Veículo do seu interesse" required/>
-        <textarea id="message" cols="30" rows="10" placeholder="Escreva sua mensagem..." required></textarea>
+        <input type="text" id="name" name="name" placeholder="Nome completo"/>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail"/>
+        <input type="tel" id="tel" name="tel" placeholder="Número de celular"/>
+        <input type="text" id="vehicle" name="vehicle" placeholder="Veículo do seu interesse"/>
+        <textarea id="message" cols="30" rows="10" name="message" placeholder="Escreva sua mensagem..."></textarea>
         <button type="submit">
           Enviar
         </button>
@@ -112,6 +112,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/0.9.0/jquery.mask.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
   <script type="module" src="./main.js"></script>
 </body>
 </html>

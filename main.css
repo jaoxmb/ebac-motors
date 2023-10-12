@@ -166,6 +166,9 @@ ul.shop li span{
   min-height: 40%;
   resize: none;
 }
+#contact form .error{
+  color: #9a9a9a;
+}
 
 footer{
   background-color: var(--bg-menu-primary);
