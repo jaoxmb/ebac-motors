@@ -57,6 +57,9 @@ button:hover{
   display: flex;
 }
 header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
   background-color: var(--bg-menu-primary);
   color: var(--color-secondary);
 }
